@@ -11,6 +11,9 @@
         margin: 0;
         padding: 0;
     }
+    li{
+        list-style-type: none;
+    }
     .header, .footer{
         background-color: aquamarine;
         height: 50px;
@@ -33,11 +36,46 @@
     .clearfix{
         clear: both;
     }
+    .chess a:hover
+    {
+        color: red;
+    }
+
+    .chess a:active
+    {
+        font-weight: bold;
+    }
+
+    .chess a:focus
+    {
+        font-style: italic;
+    }
+    .star1{
+        float: left;
+    }
+    .star1 img:hover{
+        background-color: red;
+    }
+    .star2{
+        float: left;
+    }
+    .star3{
+        float: left;
+    }
+    .star4{
+        float: left;
+    }
+    .star5{
+        float: left;
+    }
 </style>
 <body>
     <div class="header">
 
     </div>
+    <div class='chess'>
+        Немного о Михаиле Ботвиннике можно почитать <a href='https://chesspro.ru/statistic/botvinnik.shtml' target='_blank'>здесь</a>.
+        </div>
         <div class="wrap">
             <div class="menu">
                 <ul>
@@ -61,6 +99,15 @@
             </div>
             <div class="clearfix"></div>
         </div> 
-    <div class="footer"></div>   
+    <div class="footer"></div>
+     <div class="star">
+         <ul>
+             <li class="star1"><img src="image/star0.png"></li>
+             <li class="star2"><img src="image/star0.png"></li>
+             <li class="star3"><img src="image/star0.png"></li>
+             <li class="star4"><img src="image/star0.png"></li>
+             <li class="star5"><img src="image/star0.png"></li>
+         </ul>
+     </div>
 </body>
 </html>
