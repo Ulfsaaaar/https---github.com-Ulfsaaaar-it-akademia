@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+        var a = 10;
+        var b = 15;
+        var c = 20;
+        var d = 30;
+
+        console.log(a + b);
+        console.log(c * d);
+
+        calc(a,b, "+");
+        calc(c,d, "*");
+        calc(d,a, "/");
+        calc(a,b, "-");
+
+        function calc(x, y, operation){
+            switch(operation){
+                case "+": console.log(x+y); break;
+                case "-": console.log(x-y); break;
+                case "*": console.log(x*y); break;
+                case "/": console.log(x/y); break;
+
+                }
+        }
+
+//var age = promt();
+//var num = parseInt('10');
+//var result = calc
+    </script>
+    <a href="../../index.html">на главную</a>
+</body>
+</html>
