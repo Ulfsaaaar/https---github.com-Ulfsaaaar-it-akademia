@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKETA</title>
+</head>
+<body>
+    <script>
+        
+        var family=prompt('Введите вашу фамилию'); 
+        var name=prompt('Введите ваше имя'); 
+        var father_name=prompt('Введите вае отчество'); 
+        do {
+        var ageStr=prompt('Введите ваш возраст');
+        var age=parseInt(ageStr);
+         } while ( isNaN(age) );
+        var after_5_years=age+5;
+        var days=age*365; 
+        var sex=confirm('Ваш пол мужской?'); 
+        var text_sex=sex ? 'Мужской' : 'Женский'; 
+        var pensioner;
+        if (age<65) { 
+            pensioner='Нет'; 
+        }
+        else {
+            pensioner='Да';
+        }
+        alert('Ваше ФИО: '+(family)+' '+(name)+' '+(father_name)+'\nВаш возраст в годах: '+(age)+'\nВаш возраст в днях: '+(days)+'\nЧерез 5 лет Вам будет: '+(after_5_years)+'\nВаш пол: '+(text_sex)+'\nВы на пенсии: '+(pensioner));
+    </script>
+     <br>
+     <a href="../../index.html">на главную</a>  
+</body>
+</html>
